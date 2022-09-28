@@ -1,0 +1,40 @@
+<!-- By Laura Kate Garner -->
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<meta charset ="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<title>welcome</title>
+		<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+		
+		<script http.server import HTTPServer, BaseHTTPRequestHandler></script>
+	</head>
+	<body>
+		<p>laura kate garner
+			<a href = "seed.html">Planting a seed</a>
+		</p>
+		<a-scene>
+			<a-assets>
+				<a-asset-item id ="headline-just_name" src="3d-models/headline-just_name.glb" crossorigin ="anonymous" scale =".001 .001 .001" position="1.25 0.5 -4.5"></a-asset-item>
+			</a-assets>
+			<a-entity gltf-modelS="#headline-just_name"></a-entity>
+      		<a-entity id ="house" position="1.25 0.5 -4.5" geometry="primitive: box" material= "color: pink"></a-entity>
+      		<a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      		<a-sky color="#ECECEC"></a-sky>
+    	</a-scene>
+		<!--
+		<script>
+      		var house = document.querySelector("house");
+      		if(house.hasLoaded() === true) {
+        		house.addEventListener('stateadded', function(evt) {
+          		if (evt.detail === 'selected') {
+            		house.components.color = "white";
+            		console.log('Entity now selected!');
+          		}});
+        	}
+    	</script>
+		-->
+	</body>
+</html>
+S
