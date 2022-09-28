@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <meta lang="en">
+    <html>
+        <head>
+            <title>home</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <!--Style sheets and internal css-->
+            <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="style/style.css">
+            <!--Global site tag (gtag.js) Google Analytics-->
+            <script type="text/javascript" async src="https://www.google-analytics.com/analytics.js"></script>
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153766989-1"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config','UA=153766989-1')
+            </script>
+            <!-- Page Formatting -->
+            <style>
+              html,body {
+                position:fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+              }
+            </style>
+          </head>
+        <body>
+          <!-- Navbar (sit on top) -->
+          <div class="w3-top">
+          <div class="w3-bar w3-white w3-card" id="myNavbar">
+              <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="assets/images/favicon.png" alt="laura kate" width="width" height="height"></a>
+              <!-- Right-sided navbar links -->
+          <div class="w3-right w3-hide-small" style="color: gray">
+            <a href="about.html" class="w3-bar-item w3-button">ABOUT</a>
+            <a href="work.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+            <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+          </div>
+          <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+              <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Sidebar on small screens when clicking the menu icon -->
+      <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; color:gray" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">×</a>
+        <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="work.html" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+        <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+      </nav>
+      <!-- Header with full-height image -->
+      <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+      <!-- Headliner container -->
+      <div class="container" id="head-animation">
+        <iframe src="https://app.vectary.com/p/3mQsxbth74oQQecgI0BkOi" frameborder="0" width="100%" height="480" style="cursor:pointer;"></iframe>
+      </div>
+      <div class="w3-display-left w3-text-white" style="position:absolute; top:50%; left:50%; transform:translate(-50%, 50%); -ms-transform:translate(-50%,50%); padding:1px 30px; text-align:center">
+        <p><a href="about.html" class="w3-button w3-white w3-padding-large w3-large w3-display-topmiddle w3-opacity w3-hover-opacity-off" style="border-radius:5px; box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0  rgba(0,0,0,0.19)">hello</a></p>
+      </div> 
+      <div class="w3-display-bottommiddle w3-white w3-centered">
+          <a href="https://github.com/lkgarner"><i class ="fa fa-github w3-hover-opacity" style = "color: gray; position: absolute; left: calc(50% - 10px)"></i></a>
+          <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a> for laura kate garner</p>
+      </div>
+    </header>
+    <script>
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+  
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+  
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+    </script>
+  </body>
+</html>
+
